@@ -1,0 +1,1 @@
+# strucni-seminar
