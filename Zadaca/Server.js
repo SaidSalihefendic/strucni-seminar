@@ -1,7 +1,7 @@
 const net = require('net');
 
 const server = net.createServer((socket) => {
-	//FAZON, ne moze ici server.on('data') KONJU
+	//FAZON, ne moze ici server.on('data')
   socket.on('data', (data) => {
 	  console.log(data.toString());
   });
@@ -25,12 +25,12 @@ server.listen({
 
 const client = net.createConnection({host:'localhost', port:8080}, () =>{
 	console.log("Connected to server");
-	client.write("Hello Majmune");
+	client.write("Connecting to you!");
 	
 	client.setTimeout(1000);
 	
 	client.on('timeout', ()=>{
-		client.write("Anes, Said");
+		client.write("I want to talk with you!");
 	});
 });
 
