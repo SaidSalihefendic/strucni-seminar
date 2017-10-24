@@ -33,20 +33,3 @@ const client = net.createConnection({host:'localhost', port:8080}, () =>{
 		client.write("I want to talk with you!");
 	});
 });
-
-
-
-
-//client.on('data', (data) => {
-//	console.log(data.toString());
-//});
-
-
-
-
-
-
-// grab an arbitrary unused port.
-//server.listen({host: 'localhost', port: 8080} => {
-  //console.log('opened server on', server.address());
-//});
