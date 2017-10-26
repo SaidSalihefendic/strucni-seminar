@@ -1,0 +1,44 @@
+U sustini, sve u Javascript su nizovi
+Javascript nije Type jezik, moze sadrzavati sve tipove unutar niza
+
+Server prihvata konekcije i dobija socket, ti objekti konekcija moze se drzati u nizu
+
+niz.push, mozemo pushati konekcije u niz
+
+Objekat koji smo dobili da saljemo podatak nazad klijentu mozemo dodati neki niz, daje mogucnost da imamo vise klijenata
+koji se vezu na isti IP adresa i port i pravimo listu svih tih koneckija
+
+dodje podatak na server, for petlja proci kroz cijeli taj niz i poslati svima taj podatak
+U sustini, pravimo chat
+
+Dodjeljujemo svima neki ID, te saljemo svima taj napisani podatak
+
+Sva komunikacija svodi na procesiranje portova, nacin na koji cemo komunicirati
+Bitno je nauciti razliku klijent-server, razmjena podataka
+
+Na istom principu funkcionise web server
+
+Uspostavlja se konekcija i server vraca niz podataka
+
+Konekcija, zahtjev, responses i sve ostalo
+
+Razdvojimo dvije aplikacije, jedna aplikacija na kojem je server, a na drugom klijenti
+
+
+var v1;
+let v1; IMA UZI SCOPE NA METODU KOJA SE DEKLARISE
+
+function f1(){
+	var v1;
+	for(let v2 = 0; v2 < 10; v2++)
+	{
+		
+	}
+
+	for(let v2 = 0; 
+
+
+Web interfejs za chat! :D
+
+Web aplikacija, pa ce nas klient biti konektovan na server
+};
