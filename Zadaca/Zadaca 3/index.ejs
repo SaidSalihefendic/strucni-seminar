@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title> <!--NE GLEDA SE KAO HTML, NEGO RENDER METODA GLEDA GDJE JE MJESTO GDJE CE -->
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %>, ima vas <%= broj %></%==%></%==></p>
+  
+	<form action='./poruka' method="POST">
+		<br>
+		Unesite poruku<br><input type="text" name="poruka"></input><br>
+		Unesite poruku<br><input type="text" name="prezime"></input>
+		<br>
+		<input type="submit"></input>
+	</form>
+	
+	<%= poruke %>
+  </body>
+</html>
