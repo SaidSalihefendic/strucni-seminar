@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chat App</title>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+			Username<input type="text" name="ime" id="user">
+			Password<input type="password" name="pass" id="pass">
+			<button style="width: 100px; height:100px" onclick="login()">CLICK ME</button>
+		
+		<div id="Error"></div>
+		
+		<script>
+			function login(){
+				var ime = $("#user").val();
+				var pass = $("#pass").val();
+				document.cookie = "x-user = " ime + ";";
+				
+				$.post('/loginajax', {name: ime, pass: pass}, (data) =>{
+					if(data.status == 401){
+						$("#Error").html("<p style='color: red;'>Nema usera u bazi</p>");
+					}
+					else{
+						$("#Error").html("<p>" + data.name + "</p>");
+
+						window.location.replace("localhost:3000/chat");
+					}
+				}).fail(()=>{
+					console.log("Nije uspjela post metoda");
+				});
+			}
+			
+			
+		</script>
+	</body>
+	
+</html>
