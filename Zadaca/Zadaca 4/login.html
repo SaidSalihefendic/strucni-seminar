@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chat App</title>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<center>
+			<input type="text" name="ime" id="user" placeholder="Username"> <br/><br/>
+			<input type="password" name="pass" id="pass" placeholder="Password"> <br/><br/>
+			<button style="width: 75px; height:30px" onclick="login()">Log in</button><br/><br/>
+		
+			<div id="Error"></div>
+		</center>
+		
+		<script>
+				//TO-DO: Odvojiti u jedan novi .js fajl i ukljuciti skriptu u ovaj HTML
+			function login(){
+				var ime = $("#user").val();
+				var pass = $("#pass").val();
+				
+					//Saljemo u server date podatke
+				$.post('/loginajax', {name: ime, pass: pass}, (data) => {
+						//Validacija
+					if(data.status == 401){
+						$("#Error").html("<p style='color: red;'>Nema usera u bazi</p>");
+					}
+					else{
+						//$("#Error").html("<p>" + data.name + "</p>");
+						//console.log("Postoji user!");
+						
+							//Spasavamo u Cookie podatke o useru ukoliko je verifikovan
+						document.cookie = "x-user = " + data.name + ";";
+							
+							//Ulazimo u chat-room, gdje ce se vrsiti autorizacija
+						location.replace("/chat");
+					}
+				}).fail(()=>{
+					console.log("Nije uspjela post metoda");
+				});
+			}
+			
+			
+		</script>
+	</body>
+	
+</html>

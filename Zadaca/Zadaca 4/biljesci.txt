@@ -1,0 +1,7 @@
+Ista ruta na koji vam dolaze podaci
+
+Napravite drugu rutu /loginajax koja, znaci, ne radi render, nego radi res.send i JSON vraca u kojem je token i neki enkriptovan hash i ako je USR i OK, status 200, a ako nije ok, 401
+I tamo treba druga login forma na frontu, koja ce zvati ajax poziv na tu rutu, ispravan response, napraviti na klijentskoj strani cookie i staviti x-user
+vrijednost i browser redirektovati 
+
+Dodjite i da bude kod na GitHubu, AJAX login i redirekcija na chat, Slack, poslati poruke, pitati

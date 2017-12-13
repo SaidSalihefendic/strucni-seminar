@@ -1,0 +1,6 @@
+Logiranje T
+Validacije usera T
+Cookie T
+Niz usera T
+Ko je logiran, da se prikazuje ime T
+Cookie kriptirano i dekriptovan user T
