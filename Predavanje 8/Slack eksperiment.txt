@@ -1,0 +1,43 @@
+Kopija Slack-a, ali da je brendirana pod Demirom Selmanovicem
+
+Product Owner
+
+	Registration
+	Login
+	My Profile
+	Kanali
+	Messaging
+
+<- CRUD ->
+
+	Create
+	Read
+	Update
+	Delete
+
+
+<- Sprint backlog ->
+
+	EVN Setup - 4h
+	DB Design + Create - 4h
+	Data encryption - 3h
+	Register form - 6h
+	Front template - 
+	Login forma
+	Forgot password form
+	Login API
+	Register API
+	Forgot password API
+	Authorization MIDDLEWARE
+	Add channel forma
+	Delete channel
+	Channel API
+	Messaging Front + Web Socket
+	Messaging Crud + Web Socket
+	
+	
+Zadatak - Pogledati Trello.com lagano za koristenje, ostale stvari da pokusamo iduce hefte, da iskoristite slack da pricate
+i da napravite taskove kojima cete upravo zavrsiti ovu pricu da se doda registracija korisnika, ta registracija ne mora
+ici u bazu, nego ta registracija ide u memorijsku varijablu niz, da ima login, preskociti promjena pasworda, da mozete 
+kreirati kanale i da posaljete poruku u kanal, moze sve stati u memoriju, neka su tabele nizovi JSON objekata. Pokusajte 
+napraviti estimacije.

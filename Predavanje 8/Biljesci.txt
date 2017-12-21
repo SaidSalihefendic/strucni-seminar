@@ -1,0 +1,50 @@
+Scrum
+
+Kad izadje obavijest, da ce Microsoft novu verziju objaviti necega za 4-5 mjeseci, malo kasne, pa se produzi na pola godine
+ili nesto slicno, dodju i pokazu sta i kako. Scrum je jedna od metoda koji koristite za upravljanje i planiranje svog
+projekta. Web aplikaciju od pocetka, korak po korak se nesto napravilo, da bi doslo do opcije da imamo aplikaciju koju
+mozete kodirati i nesto slicno. Jedna od stvari u bilo kojoj firmi je da isplanirate za odredjeni zadatak projekat
+sta treba napraviti, sta treba uraditi, koliko vremena trajati i kad cete zavrsiti. Sto ste u stanju granularnije
+razraditi projekat i prepoznati kako uraditi i kojim redoslijedom bit cete u boljoj situaciji. Nece vam klijent doci i reci
+meni treba Chat aplikacija i platiti koliko god, pa posalji kad zavrsis. Koliko ce me to kostati i kad ce biti gotovo, naprotiv
+Postoji mehanizam vremena trajanja, kostanja i potrebno je neko iskustvo. Morate imati princip rada, neki framework kojim
+upravljate taj proces. Scrum je najpopularnija metoda upravljanjem projektima i bazira se na par principa jednostavnih.
+Trebate znati par termina. 
+
+Product backlog - to je generalna lista taskova, zadataka koje trebate da izvrsite od pocetka do kraja projekta
+Jedna lista koja ce stalno azurirati. Recimo imali ste zadatak da napravite aplikaciju za chat i uvijek krecete od te neke
+velike gromade koji razbijate, da biste napravili aplikaciju.
+
+Prva stvar je neki environment setup, mada je previse granularno - ovo bi islo vec u nesto sto se zove sprint backlog
+Ulogu covjeka koji se zove product owner - osoba koja odredjuje prioritete razvoja aplikacije, poznaje kako rade, sta rade
+komponente, u dusu kako treba taj produkt da izgleda na kraju i to samo jedna osoba moze biti u timu. 
+U tom product backlogu bi bile, recimo, stvari kao sto su autentikacija, komunikacija, itd.
+Onda se u projektu odredjuje nesto sto se zove trajanje sprinta. Sprint je iteracija jedna, ako vam na nekoj vremenskoj liniji
+pocinje razvoj i tamo nekad dalje, sprintovi su uvijek jasni vremenski intervali koji su unaprijed predefinisani i zna se
+tacno koliko to traje (obicno 2 sedmice).
+Kako to sve funkcionise? Sprint planning - jedan dan na pocetku sprinta kada cijeli tim sjedi zajedno, kada se od produkt
+ownera dobije lista funkcionalnosti aplikacije koje treba implementirati, Trebate imati mogucnost da se posalje slika.
+Kasnije od slanja poruke. To su stvari koji ce product owner definisati. Na sprintu se uzimaju ti stvari i prave se
+granularniji zadaci. Neki tim moze odraditi jednu kolicinu posla, ne moze vise. Nekome vise, nekome manje, ali neki je prosjek
+uvijek tu. U sustini, ako racunate od konkretne situacije kako funkcionise. Poeni, vrijednosti, koji nisu jednaki u vremenu
+koji oznacava tezinu zadatka. Ako imate 5 ljudi i rade 8 sati dnevno, od toga efikasno 6 sati, imate 40 sati u toku sedmice.
+
+Postoji jos jedna role u Scrum - Scrum master - idealno stariji developer, rijetko kad ko ce uzeti zadatak i da iskodira.
+Osnovno pravilo je da se scope Scrum-a ne mijenja. Niko osim vatre ili velikog kriticnog problema ne bi smio da dodaje u
+Scrum.
+Burnout chart koji u jednoj sekundi daje da li vi idete brzinom kojom ste ocekivali u razvoju.
+
+Daily standup - sastanak (TimeBoxovi), traje 15 minuta, svako jutro unutar tima da sjedu zajedno i svako u timu ima pravo
+da kaze 3 stvari - sta je zavrsio, na cemu rade i koje greske ima.
+Daily plank
+
+Gira - Puno tih alata daje vizualnu prezentaciju taskova i objasniti kako to funkcionise.
+
+Jedna od shema
+
+To do / In progress / Testing / Ready for deployment / Done
+
+Kartice - naziv taska koji treba uraditi (Implementirati Facebook login), informacija ko je zaduzen za tu karticu i ko je
+	njen vlasnik (owner), vrijeme koliko je ostalo da se ta kartica zavrsi
+
+Prioritizacija - vaznije da rjesavate bug na kartici koji je u testing nego nova kartica
